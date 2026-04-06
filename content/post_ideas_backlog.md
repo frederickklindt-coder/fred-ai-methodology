@@ -71,6 +71,15 @@ Status: `[ ]` = not started, `[D]` = drafted, `[P]` = published
 49. `[ ]` My carousel design process
 50. `[D]` This post was generated with AI (→ carousel 04)
 
+## Competitive / Market Insights (from analysis C-018)
+
+51. `[ ]` What AI hustle culture gets wrong (agency grind vs. system building)
+52. `[ ]` I analyzed 26 posts from AI creators — here's what I'd steal
+53. `[ ]` The DM automation agent I'd build (system design post)
+54. `[ ]` Story selling vs. system showing (two schools of AI content)
+55. `[ ]` Why I won't start an AI agency (honest take)
+56. `[ ]` From carousel to Reel — my first 60-second script
+
 ---
 
 ## Next Actions

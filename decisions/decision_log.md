@@ -19,3 +19,4 @@
 | C-015 | Add Mode B (raw idea → structured brief) to condensation prompt | Confirmed | 2026-04-06 | Handles messy notes/brain dumps, not just finished documents |
 | C-016 | Create Instagram bio (mix of options E+D+B) | Confirmed | 2026-04-06 | Bold positioning + Spanglish + philosophical identity |
 | C-017 | Save 50 post ideas as content backlog | Confirmed | 2026-04-06 | Organized by category with status tracking |
+| C-018 | Create competitive analysis from Instagram creator screenshots | Confirmed | 2026-04-06 | 33 screenshots → 3 business models + tool stack → stored in content/competitive_analysis/ |
