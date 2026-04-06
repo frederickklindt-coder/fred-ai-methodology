@@ -20,3 +20,6 @@
 | C-016 | Create Instagram bio (mix of options E+D+B) | Confirmed | 2026-04-06 | Bold positioning + Spanglish + philosophical identity |
 | C-017 | Save 50 post ideas as content backlog | Confirmed | 2026-04-06 | Organized by category with status tracking |
 | C-018 | Create competitive analysis from Instagram creator screenshots | Confirmed | 2026-04-06 | 33 screenshots → 3 business models + tool stack → stored in content/competitive_analysis/ |
+| C-019 | Define content process map with 4 content types + posting cadence | Confirmed | 2026-04-06 | Carousel (weekly), Podcast (biweekly), Reels (repurposed), Lead Magnets (selective). Stored in content/content_process_map.md |
+| C-020 | Define toolstack per content type with Phase 1 ($0) and Phase 2 (~$44/mo) | Confirmed | 2026-04-06 | Phase 1: Claude + Gemini + CapCut + NotebookLM (all free). Phase 2: + ElevenLabs + Descript + Opus Clip. Stored in content/toolstack_by_content_type.md |
+| C-021 | Build 8-agent content pipeline (Ideas Translator → Carousel/Podcast/Lead Magnet → Caption/Image/Decision) | Confirmed | 2026-04-06 | Prompt-based, tool-agnostic agents. Specs in agents/00–07. Ideas Translator is the universal entry point |

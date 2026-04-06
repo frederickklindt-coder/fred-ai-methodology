@@ -2,7 +2,7 @@
 
 Final version — mix of options E (bold positioning) + D (Spanglish) + B (philosophical).
 
-## Primary (recommended)
+## Active (live on Instagram)
 
 ```
 I don't "use" AI
@@ -12,22 +12,22 @@ ideas, experiments & debates
 building en público ↓
 ```
 
-## Alternative A (slightly warmer)
+## Previous versions
 
+### v1 (2026-04-05)
+```
+building with AI en público ⚡
+prompts → systems → real products
+ideas, experiments & debates
+learn + build conmigo ↓
+```
+
+### Alt A (unused)
 ```
 ideas + AI + systems ⚡
 caos → proyectos reales
 prompts, agents & debates
 building in public ↓
-```
-
-## Alternative B (more tactical)
-
-```
-building with AI en público ⚡
-prompts → systems → real products
-experiments, debates & builds
-learn + build conmigo ↓
 ```
 
 ## Bio Rules
