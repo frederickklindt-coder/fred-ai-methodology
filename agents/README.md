@@ -10,6 +10,9 @@ Interactive agents that run inside VS Code. These are your live thinking partner
 |-------|------|---------|
 | **Pauli** (Master Orchestrator) | `.github/agents/pauli.agent.md` | Single entry point for ALL requests — classifies, routes, orchestrates, delivers. The boss. |
 | **Content Angles Advisor** | `.github/agents/content-angles.agent.md` | Debates ideas, suggests content angles, refines into actionable briefs |
+| **Carousel Reviewer** | `.github/agents/carousel-reviewer.agent.md` | Quality gate — structural critique on draft carousels (hook, flow, proof, Golden Rule) |
+| **Caption Critic** | `.github/agents/caption-critic.agent.md` | Editorial eye — tone, scroll-stop factor, authenticity scoring on draft captions |
+| **Competitor Scout** | `.github/agents/competitor-scout.agent.md` | Strategic intel — analyzes competitor posts + designs Fred's counter-angle |
 
 **Usage:** Type `@pauli` in VS Code chat to invoke the orchestrator for any request.
 
