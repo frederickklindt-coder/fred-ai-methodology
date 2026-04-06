@@ -35,7 +35,7 @@ Fred has a raw idea, thought, observation, or brain dump that could become conte
 
 **Your flow:**
 1. Invoke the **Content Angles** agent (@content-angles) to debate the idea and find the strongest angle
-2. Run the **Ideas Translator** (`agents/00_ideas_translator.md`) to produce a structured brief
+2. Run the **Ideas Translator** (@ideas-translator) to produce a structured brief
 3. Based on the brief's recommended `content_type`, invoke the right production agents:
    - **Carousel**: Carousel Writer → Caption Writer + Image Prompter (parallel)
    - **Podcast**: Podcast Scripter → Caption Writer + Image Prompter (parallel)
@@ -66,7 +66,7 @@ Fred wants to analyze something — competitor content, his own metrics, a marke
 Fred is planning — what to post this week, what to build next, how to grow.
 
 **Your flow:**
-1. Pull the Content Planner agent logic (`agents/06_content_planner.md`)
+1. Pull the Content Planner agent logic (@content-planner)
 2. Review backlog, published content, and any engagement signals Fred shares
 3. Recommend a specific plan with priorities and reasoning
 4. If Fred approves an item, switch to Mode 1 to execute
@@ -98,35 +98,39 @@ Fred needs housekeeping — update docs, fix structure, sync files, clean up.
 | `content/competitive_analysis/` | When analyzing market position or generating competitive ideas |
 | `decisions/decision_log.md` | Before making strategy decisions (check what's already decided) |
 | `content/carousels/` | When checking existing content to avoid repetition |
-| `agents/` | When you need to invoke a specific agent's prompt or check pipeline |
+| `.github/agents/` | When you need to invoke a specific agent or check pipeline |
 | `prompts/` | When you need master prompts for production (carousel, caption, condensation) |
 | `content/image_prompts/00_global_style_guide.md` | When anything visual is involved |
 
 ## Agent Invocation
 
-When you need a specialized agent, you have two options:
+All agents are VS Code Copilot agents in `.github/agents/`. Invoke them with `@agent-name` in chat:
 
-**For VS Code agents** (interactive, conversational):
 - `@content-angles` — debate ideas and explore angles
-
-**For pipeline agents** (structured prompts, follow the I/O spec):
-- Read the agent's `.md` file from `agents/` directory
-- Use its master prompt with the appropriate input
-- Produce output in the agent's specified format
-- Save files to the correct directories
+- `@ideas-translator` — raw idea → structured brief
+- `@carousel-writer` — brief → 9-slide carousel
+- `@caption-writer` — content → caption + hashtags
+- `@image-prompter` — content → Gemini-ready image prompts
+- `@podcast-scripter` — transcript → episode script
+- `@lead-magnet-creator` — topic → downloadable resource
+- `@content-planner` — backlog → weekly recommendation
+- `@decision-logger` — decisions → appended to decision log
+- `@carousel-reviewer` — draft carousel → quality scorecard
+- `@caption-critic` — draft caption → editorial feedback
+- `@competitor-scout` — competitor post → strategic analysis
 
 ## Pipeline Agent Reference
 
-| Agent | File | Input | Output |
-|-------|------|-------|--------|
-| Ideas Translator | `agents/00_ideas_translator.md` | Raw dump | Structured brief (YAML) |
-| Carousel Writer | `agents/01_carousel_writer.md` | Brief | 9-slide markdown |
-| Caption Writer | `agents/02_caption_writer.md` | Content + type | Caption + hashtags |
-| Image Prompter | `agents/03_image_prompter.md` | Content + type | Gemini-ready prompts |
-| Podcast Scripter | `agents/04_podcast_scripter.md` | Transcript + brief | Episode script |
-| Lead Magnet Creator | `agents/05_lead_magnet_creator.md` | Carousel + type | Downloadable resource |
-| Content Planner | `agents/06_content_planner.md` | Backlog + signals | Weekly recommendation |
-| Decision Logger | `agents/07_decision_logger.md` | Decision summary | Appended to decision log |
+| Agent | Invoke | Input | Output |
+|-------|--------|-------|--------|
+| Ideas Translator | `@ideas-translator` | Raw dump | Structured brief (YAML) |
+| Carousel Writer | `@carousel-writer` | Brief | 9-slide markdown |
+| Caption Writer | `@caption-writer` | Content + type | Caption + hashtags |
+| Image Prompter | `@image-prompter` | Content + type | Gemini-ready prompts |
+| Podcast Scripter | `@podcast-scripter` | Transcript + brief | Episode script |
+| Lead Magnet Creator | `@lead-magnet-creator` | Carousel + type | Downloadable resource |
+| Content Planner | `@content-planner` | Backlog + signals | Weekly recommendation |
+| Decision Logger | `@decision-logger` | Decision summary | Appended to decision log |
 
 ## How You Communicate
 

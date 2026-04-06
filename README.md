@@ -49,8 +49,23 @@ fred-ai-methodology/
 |   `-- gemini_image_prompts.md        # aggregated image prompt pack
 |-- decisions/
 |   `-- decision_log.md                # all content strategy decisions
-|-- agents/
-|   `-- README.md                      # future content-creation agents
+|-- .github/
+|   `-- agents/                        # all VS Code Copilot agents + specs
+|       |-- README.md                  # agent registry + pipeline diagram
+|       |-- pauli.agent.md             # master orchestrator
+|       |-- content-angles.agent.md    # idea debate + angle exploration
+|       |-- ideas-translator.agent.md  # raw idea → structured brief
+|       |-- carousel-writer.agent.md   # brief → 9-slide carousel
+|       |-- caption-writer.agent.md    # content → caption + hashtags
+|       |-- image-prompter.agent.md    # content → Gemini image prompts
+|       |-- podcast-scripter.agent.md  # transcript → episode script
+|       |-- lead-magnet-creator.agent.md # topic → downloadable resource
+|       |-- content-planner.agent.md   # backlog → weekly plan
+|       |-- decision-logger.agent.md   # logs decisions to decision_log
+|       |-- carousel-reviewer.agent.md # draft → quality scorecard
+|       |-- caption-critic.agent.md    # draft → editorial feedback
+|       |-- competitor-scout.agent.md  # competitor → strategic analysis
+|       `-- pauli_delivery_protocol.md # delivery checklist templates
 `-- images/                            # generated visual assets
 ```
 
@@ -67,6 +82,7 @@ fred-ai-methodology/
 | [prompts/caption_master_prompt.md](prompts/caption_master_prompt.md) | Full v2 caption generation prompt (from ChatGPT strategy session) |
 | [prompts/condensation_prompt.md](prompts/condensation_prompt.md) | Convert persona into any content format (viral-optimized) |
 | [decisions/decision_log.md](decisions/decision_log.md) | All content strategy decisions with dates and rationale |
+| [.github/agents/](/.github/agents/README.md) | 13 VS Code Copilot agents — orchestrator, pipeline, reviewers, advisors |
 
 ## Workflow
 
