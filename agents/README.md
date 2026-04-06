@@ -2,21 +2,18 @@
 
 Two agent systems working together:
 
-## 1. Content Pipeline Agents (this folder)
-
-Prompt-based, tool-agnostic (usable in Claude, ChatGPT, or any LLM). These are the production pipeline.
-
-## 2. VS Code Copilot Agents (`.github/agents/`)
+## 1. VS Code Copilot Agents (`.github/agents/`)
 
 Interactive agents that run inside VS Code. These are your live thinking partners.
 
 | Agent | File | Purpose |
 |-------|------|---------|
+| **Pauli** (Master Orchestrator) | `.github/agents/pauli.agent.md` | Single entry point for ALL requests — classifies, routes, orchestrates, delivers. The boss. |
 | **Content Angles Advisor** | `.github/agents/content-angles.agent.md` | Debates ideas, suggests content angles, refines into actionable briefs |
 
----
+**Usage:** Type `@pauli` in VS Code chat to invoke the orchestrator for any request.
 
-## Content Pipeline Agent Registry
+## 2. Content Pipeline Agents (this folder)
 
 | # | Agent | Status | File | Purpose |
 |---|-------|--------|------|---------|
@@ -32,6 +29,15 @@ Interactive agents that run inside VS Code. These are your live thinking partner
 ## Pipeline Flow
 
 ```
+                          ┌─────────────┐
+          Fred (anything) │   @pauli    │ ← Master Orchestrator
+                          └──────┬──────┘
+                                 │ classifies & routes
+                    ┌────────────┼────────────┐
+                    ▼            ▼             ▼
+            @content-angles  [06 Planner]  [direct execution]
+                    │
+                    ▼
 Raw Idea → [00 Ideas Translator] → Structured Brief
                                         │
                     ┌───────────────────┼───────────────────┐
