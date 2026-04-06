@@ -28,12 +28,19 @@ This repo captures that full loop:
 ```text
 fred-ai-methodology/
 |-- README.md
+|-- fred_developer_persona.md          # root mirror → persona/
 |-- persona/
-|   `-- fred_developer_persona.md      # 21-page AI-generated persona
+|   `-- fred_developer_persona.md      # 21-page AI-generated persona (canonical)
+|-- context/                           # raw source material / AI context files
+|   |-- README.md                      # index + interconnection map
+|   |-- resume_product_engineer.md     # current resume (April 2026)
+|   |-- resume_feb_2026.md             # earlier resume (Feb 2026)
+|   |-- chatgpt_user_profile.md        # ChatGPT's model of Fred
+|   `-- gemini_user_profile.md         # Gemini's model of Fred
 |-- content/
 |   |-- instagram_carousel_playbook.md # master playbook (meta-story + all content)
-|   |-- carousels/                     # 6 standalone 9-slide scripts
-|   |-- captions/                      # 6 publish-ready captions
+|   |-- carousels/                     # 10 standalone 9-slide scripts
+|   |-- captions/                      # 10 publish-ready captions
 |   `-- image_prompts/                 # Gemini cover prompts + style guide
 |-- prompts/
 |   |-- carousel_master_prompt.md      # reusable carousel generation prompt
@@ -44,8 +51,7 @@ fred-ai-methodology/
 |   `-- decision_log.md                # all content strategy decisions
 |-- agents/
 |   `-- README.md                      # future content-creation agents
-`-- context/
-    `-- README.md                      # root-level artifact index
+`-- images/                            # generated visual assets
 ```
 
 ## Key Documents
