@@ -74,9 +74,9 @@ Status: `[ ]` = not started, `[D]` = drafted, `[P]` = published
 ## Competitive / Market Insights (from analysis C-018)
 
 51. `[ ]` What AI hustle culture gets wrong (agency grind vs. system building)
-52. `[ ]` I analyzed 26 posts from AI creators — here's what I'd steal
+52. `[★]` I analyzed 26 posts from AI creators — here's what I'd steal ← **NEXT WEEK**
 53. `[ ]` The DM automation agent I'd build (system design post)
-54. `[ ]` Story selling vs. system showing (two schools of AI content)
+54. `[★]` Story selling vs. system showing (two schools of AI content) ← **NEXT WEEK**
 55. `[ ]` Why I won't start an AI agency (honest take)
 56. `[ ]` From carousel to Reel — my first 60-second script
 

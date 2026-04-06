@@ -20,6 +20,53 @@
 | C-016 | Create Instagram bio (mix of options E+D+B) | Confirmed | 2026-04-06 | Bold positioning + Spanglish + philosophical identity |
 | C-017 | Save 50 post ideas as content backlog | Confirmed | 2026-04-06 | Organized by category with status tracking |
 | C-018 | Create competitive analysis from Instagram creator screenshots | Confirmed | 2026-04-06 | 33 screenshots → 3 business models + tool stack → stored in content/competitive_analysis/ |
+| C-019 | Golden Rule as signature closing slide on every carousel | Confirmed | 2026-04-06 | "AI can replace the busywork. It can't replace your voice, your story, or your authenticity." Variations encouraged per topic |
+| C-020 | Nano Banana confirmed as image generation model (via Gemini) | Confirmed | 2026-04-06 | Updates C-003: Gemini uses Nano Banana model; Sora/Canva/Photopea skipped |
+| C-021 | Adopt 4-point growth strategy from competitive analysis | Planned | 2026-04-06 | See adoption roadmap below |
+
+---
+
+## Adoption Roadmap (C-021)
+
+Four validated growth strategies from competitive analysis, mapped to Fred's implementation plan.
+
+### 1. Keyword CTA per post — ✅ ALREADY ACTIVE
+
+- Status: **Done** (C-004)
+- Each carousel already has a unique keyword (SYSTEM, AGENTS, DEBATE, META, SOLO, LEVEL)
+- Validated by competitor analysis — keep doing this consistently
+
+### 2. "Quick win" principle — 🔜 NEXT PRODUCT
+
+- Status: **Ready when needed**
+- Rule: Any future digital product (ebook, template, course) must deliver tangible value in the first 10 minutes
+- Action: Embed this as a constraint in whatever product creation prompt/process we build
+- Timeline: When Fred creates first digital product
+
+### 3. 3-part DM automation sequence — 🛠️ BUILD AS AI AGENT
+
+- Status: **Design phase**
+- Concept: When user comments keyword → trigger automated sequence:
+  1. **Immediate:** Deliver freebie (PDF, template, or mini-guide)
+  2. **24 hours later:** Send a transformation story (personal, authentic)
+  3. **48 hours later:** Soft invite to product/deeper content with urgency
+- Action: Design this as a documented AI agent in `agents/` — fits the brand perfectly (building the automation in public)
+- Prerequisite: Need a freebie/lead magnet to deliver + Instagram API or ManyChat setup
+- Content idea: Document the build as carousel #53 ("The DM automation agent I'd build")
+- Timeline: After first digital product exists
+
+### 4. Reels strategy (60-second scripts) — 📋 PLAN
+
+- Status: **Framework ready, execution pending**
+- Structure (proven by competitors):
+  1. **0–10s:** Relatable daily problem (hook)
+  2. **10–30s:** Your turning point / insight
+  3. **30–50s:** The result / system you built
+  4. **50–60s:** CTA — "comment [KEYWORD] and I'll send you..."
+- Action: Create a `reels_master_prompt.md` in `prompts/` when ready
+- Prerequisite: Comfort with video + decide on video tool stack (Veed.io, Kling.ai, or phone-native)
+- Content idea: Document the transition as carousel #56 ("From carousel to Reel")
+- Timeline: After carousel pipeline is running smoothly (post launch batch)
 | C-019 | Define content process map with 4 content types + posting cadence | Confirmed | 2026-04-06 | Carousel (weekly), Podcast (biweekly), Reels (repurposed), Lead Magnets (selective). Stored in content/content_process_map.md |
 | C-020 | Define toolstack per content type with Phase 1 ($0) and Phase 2 (~$44/mo) | Confirmed | 2026-04-06 | Phase 1: Claude + Gemini + CapCut + NotebookLM (all free). Phase 2: + ElevenLabs + Descript + Opus Clip. Stored in content/toolstack_by_content_type.md |
 | C-021 | Build 8-agent content pipeline (Ideas Translator → Carousel/Podcast/Lead Magnet → Caption/Image/Decision) | Confirmed | 2026-04-06 | Prompt-based, tool-agnostic agents. Specs in agents/00–07. Ideas Translator is the universal entry point |

@@ -67,12 +67,16 @@ Your task is to create a HIGH-PERFORMING 9-slide Instagram carousel.
   - mini case study
 - Make it feel real, not hype
 
-### Slide 9 — CTA
+### Slide 9 — SIGNATURE + CTA
 
-- Soft call to action
+- Open with the Golden Rule (or a variation):
+  > "AI can replace the 40 hours of busywork. It can't replace your voice, your story, or your authenticity."
+- Variations are encouraged — adapt the phrasing to fit the carousel's topic while keeping the core message: AI handles the work, YOU are the differentiator
+- Follow with a soft call to action
 - Ask to comment: [KEYWORD CTA]
 - Or follow / save
 - Must feel natural, not pushy
+- The Golden Rule + CTA combo should feel like a personal sign-off, not a lecture
 
 ## CONTENT PRINCIPLES
 

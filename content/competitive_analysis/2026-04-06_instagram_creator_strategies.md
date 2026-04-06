@@ -100,7 +100,7 @@ Four distinct Instagram creators share frameworks for generating income through 
 |----------|-------|--------------------|
 | Text & Scripting | Claude, Copy.ai, GetPoppy | ✅ Claude (primary) |
 | Video & Animation | Veed.io, Pictory.ai, Freepik, Kling.ai, Animoto | ❌ Not yet |
-| Visuals & Thumbnails | Sora AI, Canva, Nano Banana, Photopea | ⚠️ Gemini for images (decision C-003) |
+| Visuals & Thumbnails | Sora AI, Canva, Nano Banana, Photopea | ✅ Nano Banana (via Gemini) — confirmed |
 | Audio & Voiceover | ElevenLabs | ❌ Not yet |
 | Research & Analytics | Nichesss, Social Blade, vidIQ | ❌ Not yet |
 
