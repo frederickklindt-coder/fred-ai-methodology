@@ -1,8 +1,22 @@
 # Agents
 
-Content pipeline agents — prompt-based, tool-agnostic (usable in Claude, ChatGPT, or any LLM).
+Two agent systems working together:
 
-## Agent Registry
+## 1. Content Pipeline Agents (this folder)
+
+Prompt-based, tool-agnostic (usable in Claude, ChatGPT, or any LLM). These are the production pipeline.
+
+## 2. VS Code Copilot Agents (`.github/agents/`)
+
+Interactive agents that run inside VS Code. These are your live thinking partners.
+
+| Agent | File | Purpose |
+|-------|------|---------|
+| **Content Angles Advisor** | `.github/agents/content-angles.agent.md` | Debates ideas, suggests content angles, refines into actionable briefs |
+
+---
+
+## Content Pipeline Agent Registry
 
 | # | Agent | Status | File | Purpose |
 |---|-------|--------|------|---------|
