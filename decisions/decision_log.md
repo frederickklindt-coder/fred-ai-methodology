@@ -13,3 +13,9 @@
 | C-009 | Restore full ChatGPT v2 prompts as canonical versions | Confirmed | 2026-04-06 | Carousel + caption master prompts expanded from condensed to full original versions |
 | C-010 | Enhance condensation prompt with viral optimization layer | Confirmed | 2026-04-06 | Added quality checks, viral rules, extra format options (bio, cold DM) |
 | C-011 | Document meta-process: how the persona file became content | Confirmed | 2026-04-06 | The 21-page persona was AI-generated from git evidence, then became the source for all content |
+| C-012 | Merge carousel sets: keep 6 originals + add 4 new topics | Confirmed | 2026-04-06 | Inbox Intel, Philosophical Debate, No-Code→AI, Lab Identity. Dropped AI Stack (weak carousel) and E-book (future) |
+| C-013 | Add SOURCE CONTEXT input to carousel prompt | Confirmed | 2026-04-06 | Grounds carousels in real material instead of generic advice |
+| C-014 | Add CAROUSEL SCRIPT input to caption prompt | Confirmed | 2026-04-06 | Captions complement slides instead of repeating them |
+| C-015 | Add Mode B (raw idea → structured brief) to condensation prompt | Confirmed | 2026-04-06 | Handles messy notes/brain dumps, not just finished documents |
+| C-016 | Create Instagram bio (mix of options E+D+B) | Confirmed | 2026-04-06 | Bold positioning + Spanglish + philosophical identity |
+| C-017 | Save 50 post ideas as content backlog | Confirmed | 2026-04-06 | Organized by category with status tracking |

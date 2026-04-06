@@ -16,6 +16,7 @@ Your task is to create a HIGH-PERFORMING 9-slide Instagram carousel.
 - **AUDIENCE:** beginners + builders curious about AI, systems, and leverage
 - **RESULT:** [what transformation this gives]
 - **KEYWORD CTA:** [word to comment]
+- **SOURCE CONTEXT (optional):** [paste condensed persona, project notes, or raw idea below — the carousel should be grounded in this real material, not generic advice]
 
 ## GOAL
 
@@ -79,6 +80,8 @@ Your task is to create a HIGH-PERFORMING 9-slide Instagram carousel.
 - Focus on systems, workflows, real usage
 - Show thinking, not just tips
 - Make it feel like: "behind the scenes of someone building with AI"
+- If SOURCE CONTEXT is provided, every claim and number must come from it — do not invent metrics or experiences
+- Slide 8 (Proof) must reference real outcomes from the source material
 
 ## FORMAT
 

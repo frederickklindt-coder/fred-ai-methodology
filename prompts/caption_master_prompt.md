@@ -16,6 +16,7 @@ Your task is to write a HIGH-PERFORMING Instagram caption for a carousel post.
 - **AUDIENCE:** beginners + builders curious about AI, systems, and leverage
 - **RESULT:** [transformation or outcome]
 - **KEYWORD CTA:** [word to comment]
+- **CAROUSEL SCRIPT (recommended):** [paste the 9-slide text so the caption reinforces and complements the carousel — don't repeat slides, add context they can't show visually]
 
 ## GOAL
 
@@ -85,6 +86,13 @@ Your task is to write a HIGH-PERFORMING Instagram caption for a carousel post.
 - Use spacing for rhythm
 - No long paragraphs
 - Keep under 220–300 words
+
+## HASHTAG STRATEGY
+
+- 5–10 hashtags at the end
+- Mix: 2-3 broad (#aidev, #buildinpublic), 2-3 niche (#promptengineering, #solofounder), 1-2 community (#indiehacker, #systems)
+- No hashtags in the caption body — only at the end
+- Rotate hashtags across posts to avoid shadow-ban patterns
 
 ## OPTIONAL PRODUCT INTEGRATION
 

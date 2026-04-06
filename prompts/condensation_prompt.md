@@ -11,6 +11,24 @@ and version-controlled state as source of truth.
 Your job is to **condense** this into [FORMAT] that feels like insider
 knowledge being shared for the first time.
 
+## Modes
+
+### Mode A — Condensation (default)
+Input: a finished document (persona, playbook, technical doc).
+Output: condensed content in the chosen format.
+
+### Mode B — Raw Idea → Structured Brief
+Input: messy notes, voice memos, bullet points, or brain dumps.
+Output: a structured content brief with:
+- **Hook** (1 line that stops the scroll)
+- **Core idea** (1 paragraph, the teachable insight)
+- **Key numbers / proof points** (extracted from notes)
+- **Target format** recommendation (carousel, thread, post, etc.)
+- **Suggested CTA keyword**
+- **3 angle options** (different ways to frame the same idea)
+
+Use Mode B when the input is raw and unstructured. Shape it before condensing it.
+
 ## Rules
 
 - Keep real numbers (254 commits, 35 agents, 51 days, 48 decisions, 107 questions)
