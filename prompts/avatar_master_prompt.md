@@ -171,6 +171,79 @@ SCENE: Clean personal brand avatar
 - Maximum clarity at small sizes — no small details that disappear at 110×110px
 ```
 
+### 4G. Custom Scene (Lifestyle / Travel / Situational)
+```
+SCENE: [describe the setting — e.g. Paris with Eiffel Tower, parachuting, coffee shop in Tokyo]
+- Frederick as: [center / second plane / background element]
+- Camera angle: [close-up / medium / wide / aerial]
+- Art style: [keep caricature animation | convert to realistic | blend realistic environment + caricature character]
+- Environment mood: [sunset, rainy, night, golden hour, dramatic, peaceful]
+- Robot companion: [include / exclude / subtle background element]
+- Brain hologram: [include / exclude]
+- Include Pauli: [yes / no] (if yes, attach her canonical image too)
+- Reference image for environment style: [yes — will attach separately / no]
+- Format: [1080×1350 portrait | 1080×1080 square | 1920×1080 landscape | other]
+```
+
+---
+
+## 4H. VS CODE → GEMINI WORKFLOW
+
+**This is how Fred generates avatar images using this system:**
+
+### Step 1: Request Scene in VS Code
+Tell Pauli (in chat) what you want. Can be messy — examples:
+
+> "generate me a prompt for: me in Paris, Eiffel Tower behind me, realistic style, I'm in second plane, wide angle"
+
+> "prompt for: me doing parachutes, sunset, wide angle showing nature, keep animation style, I have a reference image for the environment"
+
+> "prompt for: me and Pauli hiking in Patagonia, both caricature style, mountains, golden hour"
+
+### Step 2: Pauli Generates the Prompt
+Pauli will output a **ready-to-paste Gemini prompt** that includes:
+- The Core Identity Prompt (Section 1) adapted for the scene
+- Scene-specific instructions (location, angle, style, mood)
+- Art style directive (realistic vs caricature vs hybrid)
+- Explicit instructions for any reference images
+
+### Step 3: Copy to Gemini + Attach Images
+Pauli will tell you exactly what to attach:
+
+| What to Attach | When |
+|---------------|------|
+| `frederick_avatar_canonical_v1.png` | ALWAYS |
+| `pauli_avatar_canonical_v1.png` | Only for duo scenes |
+| Scene reference image | Only if you have one for environment style |
+
+### Step 4: Paste Prompt + Generate
+Paste the prompt Pauli gave you. Gemini generates. Check against the Consistency Checklist (Section 5).
+
+### Art Style Directives (for the prompt)
+
+When requesting a style, Pauli will embed one of these in the generated prompt:
+
+**REALISTIC:**
+```
+Convert the character from the canonical caricature reference into a photorealistic style.
+Keep the EXACT same face features (hair, beard, smile, eyes) but render as realistic photography.
+The environment should be fully photorealistic — natural lighting, real textures, depth of field.
+The character should look like a real person IN a real photo, not a cartoon in a photo.
+```
+
+**CARICATURE (default):**
+```
+Keep the same semi-realistic caricature style as the canonical reference image.
+The character and environment should share the same illustrated, painterly aesthetic.
+```
+
+**HYBRID (caricature character + realistic/stylized environment):**
+```
+Keep the character in semi-realistic caricature style matching the canonical reference.
+The environment should be [realistic / stylized illustration — specify based on reference image].
+The character should feel naturally placed in the scene despite the style difference.
+```
+
 ---
 
 ## 5. CONSISTENCY CHECKLIST
@@ -225,3 +298,4 @@ For scenes that include both Frederick and Pauli, see **`prompts/avatar_pauli_pr
 |---------|------|---------|
 | v1 | 2026-04-06 | Initial canonical avatar prompt based on ChatGPT caricature reference image |
 | v1.1 | 2026-04-07 | Added duo scene cross-reference to Pauli's avatar prompt |
+| v1.2 | 2026-04-07 | Added custom scene template (4G) + VS Code → Gemini workflow (4H) with art style directives |
