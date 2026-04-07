@@ -15,4 +15,6 @@ This file aggregates the prompt pack in `content/image_prompts/`.
 - `content/image_prompts/04_meta_analysis_cover.md`
 - `content/image_prompts/05_timeline_proof_cover.md`
 - `content/image_prompts/06_stop_search_engine_cover.md`
+- `content/image_prompts/09_nocode_to_ai_systems_cover.md`
+- `content/image_prompts/09_nocode_to_ai_systems_inner.md`
 - `content/image_prompts/99_inner_slide_template.md`
