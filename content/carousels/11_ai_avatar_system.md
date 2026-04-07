@@ -72,13 +72,17 @@ Feed the output back and refine:
 — keep the same caricature style
 Regenerate with these corrections."
 
+Pro tip: ChatGPT lets you HIGHLIGHT
+the exact area of the image you want
+changed. Circle the hair, the eyes,
+the shirt — and describe the fix.
+
+Text + visual highlight = surgical edits.
+Way faster than describing everything
+in words alone.
+
 3–5 rounds gets you a character
 that's unmistakably YOU.
-
-Pro tip: be SURGICAL with feedback.
-"Make it better" = useless.
-"Curlier hair with golden highlights,
-warmer smile showing teeth" = results.
 ```
 
 ---
