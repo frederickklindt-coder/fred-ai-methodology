@@ -78,7 +78,7 @@ Status: `[ ]` = not started, `[D]` = drafted, `[P]` = published
 53. `[ ]` The DM automation agent I'd build (system design post)
 54. `[★]` Story selling vs. system showing (two schools of AI content) ← **NEXT WEEK**
 55. `[ ]` Why I won't start an AI agency (honest take)
-56. `[ ]` How I built a reusable AI avatar system (canonical image → scene prompts → consistent brand visuals across all content)
+56. `[D]` How I built a reusable AI avatar system (canonical image → scene prompts → consistent brand visuals across all content) (→ carousel 11)
 56. `[ ]` From carousel to Reel — my first 60-second script
 
 ---
