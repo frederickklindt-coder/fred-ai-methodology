@@ -188,6 +188,18 @@ Before accepting any generated image, verify:
 
 ---
 
+## 5B. DUO SCENES — Frederick & Pauli Together
+
+For scenes that include both Frederick and Pauli, see **`prompts/avatar_pauli_prompt.md` Section 5** which contains the full duo scene system (working together, debate, adventure, podcast, brand).
+
+**When generating duo scenes:**
+1. Paste Frederick's Core Identity Prompt (Section 1 above)
+2. Paste Pauli's Core Identity Prompt (from `avatar_pauli_prompt.md` Section 1)
+3. Append the relevant duo scene modifier (from `avatar_pauli_prompt.md` Section 5)
+4. Attach BOTH canonical face references
+
+---
+
 ## 6. GENERATION TIPS BY TOOL
 
 ### Gemini (Nano Banana)
@@ -212,3 +224,4 @@ Before accepting any generated image, verify:
 | Version | Date | Changes |
 |---------|------|---------|
 | v1 | 2026-04-06 | Initial canonical avatar prompt based on ChatGPT caricature reference image |
+| v1.1 | 2026-04-07 | Added duo scene cross-reference to Pauli's avatar prompt |
