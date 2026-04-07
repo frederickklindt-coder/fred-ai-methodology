@@ -29,6 +29,18 @@ Read and follow `prompts/carousel_master_prompt.md` — this is the canonical ca
 - Read `content/image_prompts/00_global_style_guide.md` for visual formatting
 - Check existing carousels in `content/carousels/` to avoid repetition
 
+## Prompt Quality Rules
+
+When a carousel includes copy-paste prompts for the reader (e.g., teaching how to use AI tools):
+
+- **Include Gemini guardrails** from `image-prompter.agent.updated.md` → "Gemini Browser Prompt Constraints" section. Key rules:
+  - Disambiguate abstract vs literal: "visual motif only, no literal rendering"
+  - Specify NO text rendering unless exact text is quoted
+  - State art style explicitly (realistic vs illustrated vs caricature)
+  - Include format dimensions
+- **Reference the cross-AI workflow** when applicable — Fred uses ChatGPT for generation/analysis, Claude for prompt structuring, Gemini for image generation. This methodology is a brand differentiator.
+- **Prompts must be condensed but functional** — screenshot-ready, 2-5 lines, someone can copy-paste and get results
+
 ## Format Rules
 
 - **1080 × 1350px** optimized (text density that reads on mobile)

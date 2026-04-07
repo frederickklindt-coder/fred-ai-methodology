@@ -5,6 +5,7 @@
 > **Keyword CTA:** AVATAR
 > **Date:** April 7, 2026
 > **Visual note:** Each slide will have a generated image background/example. Text is designed to complement the visuals.
+> **Process note:** This carousel teaches the REAL process used to build Frederick's avatar system. Includes the cross-AI workflow (ChatGPT generates → ChatGPT analyzes → Claude refines → Gemini generates scenes) and Gemini-specific guardrails from hard-won lessons.
 
 ---
 
@@ -19,9 +20,9 @@ No Photoshop.
 No design skills.
 No illustrator on retainer.
 
-Just one photo, one system, and AI.
+Just one photo, a cross-AI workflow, and a system.
 
-Here's the exact 5-step process. ↓
+Here's the exact process. ↓
 ```
 
 ---
@@ -40,13 +41,15 @@ Rules:
 This is the only "real" asset you need.
 Everything else gets generated.
 
-📸 PROMPT TO KICK IT OFF:
+📸 PROMPT (paste in ChatGPT with your photo):
 
 "Using this photo as reference,
 create a semi-realistic caricature
 illustration. Exaggerated proportions
 (head ~40% of body). Keep the EXACT
-face features, hair, and expression."
+face features, hair, and expression.
+Style: between Pixar and editorial
+illustration. Warm cinematic lighting."
 ```
 
 ---
@@ -63,154 +66,171 @@ Feed the output back and refine:
 🔁 ITERATION PROMPT:
 
 "This is close but adjust:
-— make the hair curlier with golden
-  highlights
-— beard slightly lighter than hair
-— bigger, warmer smile showing teeth
+— [specific hair fix]
+— [specific facial feature fix]
+— [expression/mood adjustment]
 — keep the same caricature style
 Regenerate with these corrections."
 
 3–5 rounds gets you a character
 that's unmistakably YOU.
 
-Not generic. Not "AI art."
-YOUR digital identity.
+Pro tip: be SURGICAL with feedback.
+"Make it better" = useless.
+"Curlier hair with golden highlights,
+warmer smile showing teeth" = results.
 ```
 
 ---
 
 ```
 Slide 4:
-STEP 3 — EXTRACT YOUR CANONICAL IMAGE
+STEP 3 — LET AI ANALYZE YOUR AVATAR
 
-This is the secret weapon.
+This is the step nobody talks about.
 
-A canonical image = your character
-on a clean background, no scene, no clutter.
+Once you have a caricature you love,
+DON'T jump to using it.
 
-This becomes your MASTER REFERENCE
-for every future generation.
+Ask AI to BREAK IT DOWN first:
 
-🎯 CANONICAL EXTRACTION PROMPT:
+🔍 ANALYSIS PROMPT:
 
-"Using this reference, generate a clean
-portrait of ONLY the character.
-Head and upper body, three-quarter angle.
-Same exact face, hair, smile, clothing.
-Solid dark background, no environment.
-This is a character reference sheet
-for future generations."
+"Analyze this image. Focus on the
+persona — me. I need a solid prompt
+capable of replicating this character
+as an avatar across all my future
+content. Break down: face structure,
+hair, expression, clothing, style
+language, color temperature, and what
+makes this character recognizable."
 
-Save it. Name it. Never lose it.
+The output = your identity spec.
+ChatGPT gave me core identity, visual
+archetypes, style language, and the
+exact consistency anchors to lock.
+
+This becomes the blueprint for
+everything that follows.
 ```
 
 ---
 
 ```
 Slide 5:
-STEP 4 — DROP YOURSELF INTO ANY SCENE
+STEP 4 — BUILD YOUR MASTER PROMPT
 
-This is where the system pays off.
+Take the AI analysis from Step 3
+and turn it into a reusable prompt.
 
-Attach your canonical image +
-describe any environment = you, anywhere.
+I used Claude to refine mine:
 
-🌍 SCENE PROMPT TEMPLATE:
+🧩 CROSS-AI WORKFLOW:
+ChatGPT → generated the caricature
+ChatGPT → analyzed the identity elements
+Claude  → structured the master prompt
+Gemini  → generates all future scenes
 
-"Using the attached character reference,
-place this character in [SCENE].
-Camera angle: [wide/medium/close-up].
-Keep the EXACT same face and style.
-Environment: [realistic/illustrated].
-Mood: [sunset/dramatic/peaceful]."
+Your master prompt should lock:
+→ Face + hair + expression (identity)
+→ Clothing defaults (brand anchor)
+→ Companion/symbols (visual recurring)
+→ Color temperature rules
+→ Art style + proportions
+→ What MUST appear in every generation
 
 THE FLOW:
-Photo → Caricature → Canonical → Any Scene
-  📸      🎨           🎯          🌍
-
-One input. Infinite outputs.
+Photo → Caricature → AI Analysis → Master Prompt
+  📸      🎨           🔍              📋
+            ↓
+     Canonical → Any Scene
+       🎯         🌍
 ```
 
 ---
 
 ```
 Slide 6:
-STEP 5 — ADD MORE CHARACTERS
+STEP 5 — EXTRACT YOUR CANONICAL IMAGE
 
-Same system works for anyone.
+A canonical = your character on a clean
+background. No scene, no clutter.
 
-I built a second avatar for my girlfriend
-using the exact same process:
-Photo → Caricature → Canonical → Scenes
+Your MASTER REFERENCE for all generations.
 
-For duo scenes, attach BOTH canonical images:
+🎯 EXTRACTION PROMPT:
 
-👥 DUO SCENE PROMPT:
+"Using this reference, generate a clean
+portrait of ONLY the character.
+Head and upper body, three-quarter angle.
+Same exact face, hair, smile, clothing.
+Solid dark background (#0D1117),
+no environment, no objects, no extras.
+Semi-realistic caricature style.
+This is a character reference sheet
+for future generations."
 
-"Using BOTH attached character references,
-place both characters in [SCENE].
-They must appear in the SAME image,
-matching caricature styles.
-Character 1 on left, Character 2 on right.
-Same rendering quality for both."
-
-Now you have a cast of characters.
-Brand universe = unlocked.
+Save it. Name it. Version it.
+This file is your brand's visual DNA.
 ```
 
 ---
 
 ```
 Slide 7:
-"You need Photoshop and design skills
-to create consistent brand visuals."
+STEP 6 — GENERATE SCENES (with guardrails)
 
-No. You don't.
+Attach canonical + describe any scene.
 
-You need:
-→ One photo of yourself
-→ One canonical reference image
-→ A prompt system you reuse
+But here's what NOBODY warns you about:
+AI image generators misinterpret prompts.
 
-The old way: hire an illustrator,
-wait weeks, pay per scene, pray for consistency.
+🛡️ SCENE PROMPT (with Gemini guardrails):
 
-The new way: generate yourself in Venice
-at dinner, in Paris at sunset, parachuting
-over mountains — in minutes.
+"Using the attached canonical reference,
+place this character in [SCENE].
+Keep the EXACT same face and style.
 
-Same character. Every time.
-The system IS the skill.
+IMPORTANT:
+— Do NOT render any text on the image
+— Visual motifs only, no literal code
+  or fake UI screenshots
+— Specify: 'realistic environment' or
+  'illustrated environment' (pick one)
+— Camera: [wide/medium/close-up]
+— Mood: [sunset/dramatic/peaceful]
+— Format: 1080×1350 (4:5 portrait)"
+
+Without these guardrails, you get
+random text, broken UI, and drift.
+Ask me how I know.
 ```
 
 ---
 
 ```
 Slide 8:
-This isn't theory. This is my Tuesday.
+This isn't theory. This is my actual week.
 
-I took a selfie.
-Generated a caricature with ChatGPT.
-Iterated 5 times until the curly hair,
-the beard, and the smile were right.
+📸 Took a selfie.
+🎨 ChatGPT generated a caricature.
+🔁 Iterated 5 times on the face.
+🔍 ChatGPT analyzed the identity elements.
+📋 Claude built my master prompt system.
+🎯 Extracted the canonical image.
+🌍 Gemini now generates me — anywhere.
 
-Extracted a canonical image —
-clean background, just me.
+Venice dinner with my girlfriend.
+Paris at sunset. Parachuting over mountains.
+Working at my desk with my AI robot.
 
-Now I generate myself:
-→ Working at my desk with my AI robot
-→ Having dinner in Venice
-→ Walking through Paris
-→ Parachuting at sunset
+3 AI tools. 1 system. Infinite outputs.
 
-I did the same for Pauli.
-Now we show up in duo scenes together.
+Did the same for Pauli in one afternoon.
+Now we have duo scenes together.
 
-The entire prompt system lives in
-a master prompt file — documented,
-versioned, and reusable.
-
-Any creator can replicate this.
+The entire system: documented, versioned,
+and reusable by any creator.
 ```
 
 ---

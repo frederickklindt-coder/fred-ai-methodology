@@ -66,14 +66,14 @@ No generic AI art. The character must match the attached canonical reference EXA
 
 This carousel uses REAL generated images as slide backgrounds. Here's the recommended image mapping:
 
-| Slide | Background Image | Source |
-|-------|-----------------|--------|
-| 1 | Cover image (generated from prompt above) | Generate new |
-| 2 | Frederick's real photo (DSC_0466-01.jpeg) side by side with first caricature attempt | Real + generated |
-| 3 | Multiple caricature iterations showing refinement | Use existing ChatGPT generations from `images/` |
-| 4 | The canonical image on clean background | Use `images/canonical images/frederick_avatar_canonical_v1.png` |
-| 5 | Flow map diagram: Photo → Caricature → Canonical → Scene (with arrows) + 2-3 scene examples | Design in Canva or generate |
-| 6 | Duo image (Frederick + Pauli canonical images side by side, or a duo scene) | Use existing or generate |
-| 7 | Split screen: old way (Photoshop logo, dollar signs, clock) vs new way (one photo, one prompt, results) | Generate or design |
-| 8 | Grid of all scene experiments (Venice, Paris, parachuting, desk) | Composite from `images/Gemini_Generated_Image_*.png` |
-| 9 | Frederick avatar + robot, clean dark background, warm | Use canonical or generate simple CTA visual |
+| Slide | Content | Background Image | Source |
+|-------|---------|-----------------|--------|
+| 1 | Hook — "I built a digital version of myself" | Cover image (generated from prompt above) | Generate new |
+| 2 | Step 1 — Real photo | Frederick's real photo (DSC_0466-01.jpeg) side by side with first caricature attempt | Real + generated |
+| 3 | Step 2 — Iterate | Multiple caricature iterations showing refinement (3-5 versions) | Use existing ChatGPT generations from `images/` |
+| 4 | Step 3 — AI analyzes avatar | Screenshot or visual of ChatGPT analysis output (identity breakdown, visual archetypes, consistency anchors) | Screenshot of real ChatGPT session or designed recreation |
+| 5 | Step 4 — Master prompt + flow map | Cross-AI workflow diagram: ChatGPT → ChatGPT → Claude → Gemini + flow map Photo → Caricature → Analysis → Prompt → Canonical → Scene | Design in Canva or generate |
+| 6 | Step 5 — Canonical extraction | The canonical image on clean dark background | Use `images/canonical images/frederick_avatar_canonical_v1.png` |
+| 7 | Step 6 — Scene generation with guardrails | Split: bad output (text artifacts, drifted face) vs good output (clean scene, consistent face) | Use existing Gemini experiments + annotate |
+| 8 | Proof — Full progression | Grid/timeline of all experiments: selfie → caricature → canonical → Venice, Paris, parachuting, duo | Composite from `images/` folder |
+| 9 | CTA — Golden Rule | Frederick avatar + robot, clean dark background | Use canonical or generate simple CTA visual |
