@@ -64,5 +64,10 @@ instead of burying you.
 - Paying clients onboarded
 
 ### Slide 9 - CTA
-Want to see the architecture?
+AI can replace the 40 hours of busywork.
+It can't replace knowing which signals actually matter to your business.
+
+That's the architecture.
+
+Want to see it?
 Comment `INBOX`.

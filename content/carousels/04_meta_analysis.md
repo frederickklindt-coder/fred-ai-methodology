@@ -49,5 +49,10 @@ Patterns became explicit:
 version everything, log decisions, refactor from evidence.
 
 ### Slide 9 - CTA
+AI can replace the 40 hours of busywork.
+It can't replace the self-awareness to question your own process.
+
+That's what separates builders from users.
+
 Want the exact self-analysis prompt?
 Comment `META`.

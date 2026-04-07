@@ -47,5 +47,10 @@ In one architecture decision:
 Combined output shipped.
 
 ### Slide 9 - CTA
+AI can replace the 40 hours of busywork.
+It can't replace the thinking you do when two models disagree.
+
+That's where the real decisions happen.
+
 Want the exact comparison template?
 Comment `DEBATE`.

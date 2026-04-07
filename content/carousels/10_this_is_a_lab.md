@@ -62,5 +62,9 @@ Depth is the differentiator.
 Everything documented here.
 
 ### Slide 9 - CTA
-Here to learn differently?
+AI can replace the 40 hours of busywork.
+It can't replace your curiosity, your experiments, or your willingness to share what you learn.
+
+This is a lab. You're invited.
+
 Comment `LAB` and follow.

@@ -217,8 +217,14 @@ Generate a 1080x1350 Instagram carousel inner slide.
 Layout: text-first, CTA-focused. Dark background (#0D1117).
 
 Main text (bold, white, very large, centered):
-"Making the jump
-from no-code?"
+"AI can replace the
+40 hours of busywork."
+
+Sub-text (muted gray #8B949E, centered):
+"It can't replace your story, your pivot,
+or your will to rebuild."
+
+Accent line (green #3FB950): "That's the real moat."
 
 CTA box (rounded rectangle, subtle blue border #58A6FF, semi-transparent fill):
 "Comment SHIFT"

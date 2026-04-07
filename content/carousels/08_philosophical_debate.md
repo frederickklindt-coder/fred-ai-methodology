@@ -59,5 +59,10 @@ Debate → transcript → script → audio.
 Content from thinking, not templates.
 
 ### Slide 9 - CTA
+AI can replace the 40 hours of busywork.
+It can't replace the questions only a human would think to ask.
+
+That's what makes these debates worth having.
+
 Want to hear an AI debate?
 Comment `THINK`.

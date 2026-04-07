@@ -55,5 +55,10 @@ An agent is a persistent, scoped teammate.
 - Used in production workflows
 
 ### Slide 9 - CTA
+AI can replace the 40 hours of busywork.
+It can't replace the judgment behind how you scope each agent.
+
+That's your edge.
+
 Want my reusable template?
 Comment `AGENTS`.

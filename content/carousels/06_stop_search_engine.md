@@ -41,5 +41,10 @@ Great prompting is iterative, not magical first-try perfection.
 Multi-model comparison catches different failure modes.
 
 ### Slide 9 - CTA
+AI can replace the 40 hours of busywork.
+It can't replace the depth of thinking you bring to each iteration.
+
+Stop searching. Start building.
+
 Want my comparison workflow template?
 Comment `LEVEL`.

@@ -45,5 +45,10 @@ not from more people.
 - 3 production systems
 
 ### Slide 9 - CTA
+AI can replace the 40 hours of busywork.
+It can't replace the discipline to ship every single day.
+
+That's what the timeline proves.
+
 Building solo?
 Comment `SOLO` and I will share the framework.

@@ -68,7 +68,11 @@ I still own all decisions.
 - 48 logged decisions
 
 ### Slide 9 - CTA
-Want the step-by-step breakdown?
+AI can replace the 40 hours of busywork.
+It can't replace your voice, your story, or your authenticity.
 
+That's the real leverage.
+
+Want the step-by-step breakdown?
 Comment `SYSTEM`.
 Save this for build week.
