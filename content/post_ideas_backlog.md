@@ -81,6 +81,22 @@ Status: `[ ]` = not started, `[D]` = drafted, `[P]` = published
 56. `[D]` How I built a reusable AI avatar system (canonical image → scene prompts → consistent brand visuals across all content) (→ carousel 11)
 56. `[ ]` From carousel to Reel — my first 60-second script
 
+## Career Artifacts Archaeology (new series)
+
+> Source brief: [`/content/briefs/cv_cover_letter_archaeology.md`](briefs/cv_cover_letter_archaeology.md)
+> Research deepening prompt: [`/prompts/research_cv_cover_letter_history_prompt.md`](../prompts/research_cv_cover_letter_history_prompt.md)
+> Angle: trace the hidden origins of CV/cover-letter rules everyone follows blindly; show which still earn their keep, which are folklore that needs to die. Counterintuitive payoff per post.
+
+57. `[D]` The "no first person" rule on CVs — where it came from, why it inverts for referrals (← anchor post)
+58. `[ ]` The "one page only" rule — recruiter-desk artifact from the 1970s
+59. `[ ]` The "action verbs only" rule — why this is what makes GPT-CVs sound dead
+60. `[ ]` Cover letters: the three-paragraph trap and what replaces it
+61. `[ ]` The Trojan Horse appendix — original tactical content (free work attached to application)
+62. `[ ]` Photo on CV — Europe vs US split, where the rule came from
+63. `[ ]` "References available upon request" — dead phrase that won't die
+64. `[ ]` Loom video as cover letter — when it works, when it backfires
+65. `[ ]` GitHub-as-CV — for engineers, when the README is the cover letter
+
 ---
 
 ## Next Actions
