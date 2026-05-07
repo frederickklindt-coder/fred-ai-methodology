@@ -33,6 +33,7 @@ All agents live in `.github/agents/`. Each `.agent.md` file is both the VS Code 
 | 05 | **Lead Magnet Creator** | `lead-magnet-creator.agent.md` | Carousel topic → downloadable resource (checklist, template, guide) |
 | 06 | **Content Planner** | `content-planner.agent.md` | Backlog + metrics → weekly content recommendation |
 | 07 | **Decision Logger** | `decision-logger.agent.md` | Logs content strategy decisions to decision_log.md |
+| 08 | **Research Verdict Synthesizer** | `research-verdict-synthesizer.agent.md` | Three-model research batch → archived reports, scored verdict, ranked production candidates |
 
 ### Support Files
 
@@ -62,6 +63,8 @@ Raw Idea → [00 Ideas Translator] → Structured Brief
               ▼     ▼     ▼             ▼                   ▼
           [02]   [03]   [07]        [02] [03] [07]      [02] [07]
         Caption Image  Decision   Caption Image Decision Caption Decision
+
+Research Batch → [08 Research Verdict] → [06 Planner] / [07 Decision] / [01 Carousel Writer]
 ```
 
 ## Design Principles

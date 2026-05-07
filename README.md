@@ -62,6 +62,7 @@ fred-ai-methodology/
 |       |-- lead-magnet-creator.agent.md # topic → downloadable resource
 |       |-- content-planner.agent.md   # backlog → weekly plan
 |       |-- decision-logger.agent.md   # logs decisions to decision_log
+|       |-- research-verdict-synthesizer.agent.md # research batch → verdict + ranked content opportunities
 |       |-- carousel-reviewer.agent.md # draft → quality scorecard
 |       |-- caption-critic.agent.md    # draft → editorial feedback
 |       |-- competitor-scout.agent.md  # competitor → strategic analysis
@@ -82,7 +83,7 @@ fred-ai-methodology/
 | [prompts/caption_master_prompt.md](prompts/caption_master_prompt.md) | Full v2 caption generation prompt (from ChatGPT strategy session) |
 | [prompts/condensation_prompt.md](prompts/condensation_prompt.md) | Convert persona into any content format (viral-optimized) |
 | [decisions/decision_log.md](decisions/decision_log.md) | All content strategy decisions with dates and rationale |
-| [.github/agents/](/.github/agents/README.md) | 13 VS Code Copilot agents — orchestrator, pipeline, reviewers, advisors |
+| [.github/agents/](/.github/agents/README.md) | 14 VS Code Copilot agents — orchestrator, pipeline, reviewers, advisors, research synthesis |
 
 ## Workflow
 
