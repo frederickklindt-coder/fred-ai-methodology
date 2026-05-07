@@ -82,16 +82,25 @@ slide_count: 9
 
 ---
 
-## Recommended Slide Outline
+## Angles Produced (3 total)
 
-| Slide | Type | Angle |
-|-------|------|-------|
-| 1 | Hook | "Your AI agent just ran twice. Now a user got charged twice. Here's the word you didn't know you needed." |
-| 2 | Value | What idempotency actually means (1-line definition + mental model) |
-| 3 | Value | When you MUST care (webhook, cron, queue, AI API) |
-| 4 | Value | Pattern 1 — Idempotency Key (UUID + server cache) |
-| 5 | Value | Pattern 2 — Natural Unique ID (use the data you already have) |
-| 6 | Value | Pattern 3+4 — Upsert & State Check (the simpler fixes) |
-| 7 | Myth | "It worked fine in testing." → Production retries everything. |
-| 8 | Proof | Fred's real stack: inbox-intel, ALT webhooks, ChromaDB — all idempotent |
-| 9 | CTA | Golden Rule variation + comment IDEM |
+| ID | Angle | Focus | Keyword | File |
+|----|-------|-------|---------|------|
+| 12a | A — Bug You Can't See | Warning + solution, builder fear hook | `IDEM` | `carousels/12_idempotency.md` |
+| 12b | C — 4 Patterns, Pick One | Framework / reference card, high save rate | `PATTERNS` | `carousels/12b_idempotency_patterns.md` |
+| 12c | E — How I Made 35 Agents Idempotent | Personal story + proof, trust building | `IDEM` | `carousels/12c_idempotency_proof.md` |
+
+### Angle A — 12a (original)
+- Hook: "Your AI agent just ran twice. Now a user got charged twice."
+- Slides: Definition → When to care → P1 → P2 → P3+4 → Myth → Proof → CTA
+- Best for: cold traffic, builders first encounter with the concept
+
+### Angle C — 12b
+- Hook: "Your pipeline will retry. Pick one of these 4 patterns."
+- Slides: Concept → P1 → P2 → P3 → P4 → Decision checklist → Myth → Proof table → CTA
+- Best for: high save rate, builders who want actionable reference now
+
+### Angle E — 12c
+- Hook: "35 agents. 3 platforms. Every one handles the retry."
+- Slides: Story of incident → inbox-intel → ALT webhooks → ai-ops → Decision framework → Myth → Before/after → CTA
+- Best for: warm audience, trust-building, followers tracking Fred's journey
