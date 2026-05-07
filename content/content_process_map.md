@@ -27,11 +27,30 @@ This means ~4–5 Instagram posts/month + 2 podcast episodes/month. Sustainable 
 ### Process Flow
 
 ```
-RAW INPUT                    AGENTS                         OUTPUT
+RAW INPUT                    GATES                          OUTPUT
 ─────────────────────────────────────────────────────────────────────
-Google Keep note        ──→  Ideas Translator Agent    ──→  Structured Brief
-or raw idea dump             (analyzes, categorizes,        (content_type, audience,
-                              recommends format)             hook, key_points, cta)
+Google Keep note        ──→  [GATE 1] Angle Filter     ──→  Chosen angle(s)
+or raw idea dump             (mandatory, always runs)        Fred decides
+                             Depth scales to idea:
+                             • Raw idea → full 4-6 angles
+                             • Developed → 2-3 angles
+                             • Formed → confirm or flag
+                                    │
+                                    ▼ Fred picks angle
+                             [GATE 2] Research Check
+                             • Check content/research/
+                               for existing archived research
+                             • If missing or thin →
+                               print research prompt for
+                               Fred to run outside VS Code
+                               (ChatGPT/Claude/Gemini)
+                             • Fred returns with results →
+                               archived under content/research/
+                                    │
+                                    ▼ Research confirmed
+                             Ideas Translator Agent     ──→  Structured Brief
+                             (grounded in angle +            (content_type, audience,
+                              research output)               hook, key_points, cta)
                                     │
                                     ▼
                              Carousel Writer Agent     ──→  9-slide markdown
@@ -59,6 +78,14 @@ or raw idea dump             (analyzes, categorizes,        (content_type, audie
                                          (logs what was posted,
                                           audience, metrics later)
 ```
+
+### Gate Rules (enforced by Pauli)
+
+| Gate | Rule | Flexibility |
+|------|------|-------------|
+| **Gate 1 — Angle Filter** | Every content idea passes through angle exploration before production starts | Depth scales to idea maturity: full for raw, brief for developed, confirmatory for fully formed |
+| **Gate 2 — Research Check** | If no archived research exists for the topic, print research prompt before writing brief | Skip only if research is already in `content/research/` and is current |
+| **Gate 3 — Brief** | Brief is only written after angle is chosen and research is confirmed | N/A |
 
 ### Files Created Per Carousel
 - `carousels/XX_slug.md` — slide content

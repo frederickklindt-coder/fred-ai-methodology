@@ -8,6 +8,7 @@
 | C-004 | CTA keywords per carousel | Confirmed | 2026-04-06 | SYSTEM, AGENTS, DEBATE, META, SOLO, LEVEL |
 | C-005 | Repo serves as both portfolio and content source | Confirmed | 2026-04-06 | Public repo, methodology + content in one place |
 | C-006 | Extract playbook into standalone production assets (carousels/captions/image prompts) | Confirmed | 2026-04-06 | Implemented under content/ directories |
+| C-022 | Mandatory angle filter + research gate before any content production | Confirmed | 2026-05-06 | Every idea must pass through angle filter (depth scales to idea maturity). If no archived research exists, Pauli prints research prompt for Fred to run outside VS Code before brief is written. No brief, no carousel, no caption without both gates cleared. Enforced in pauli.agent.md, content_process_map.md, carousel_pipeline.md. |
 | C-007 | Add reusable master prompts for carousel, caption, and condensation workflows | Confirmed | 2026-04-06 | Stored in prompts/ for repeatable content pipeline |
 | C-008 | Keep root-level context artifacts synced and documented | Confirmed | 2026-04-06 | Indexed in context/README.md for traceability |
 | C-009 | Restore full ChatGPT v2 prompts as canonical versions | Confirmed | 2026-04-06 | Carousel + caption master prompts expanded from condensed to full original versions |

@@ -34,14 +34,52 @@ When Fred brings you something, classify it into one of these modes:
 Fred has a raw idea, thought, observation, or brain dump that could become content.
 
 **Your flow:**
-1. Invoke the **Content Angles** agent (@content-angles) to debate the idea and find the strongest angle
-2. Run the **Ideas Translator** (@ideas-translator) to produce a structured brief
-3. Based on the brief's recommended `content_type`, invoke the right production agents:
+
+#### GATE 1 — Angle Filter (mandatory for every content idea, no exceptions)
+
+Before any brief, any carousel, any caption — run the angle filter. Always.
+
+How you apply it depends on how developed the idea is:
+
+| Idea state | What you do |
+|------------|-------------|
+| **Raw / vague** | Full angle exploration: 4–6 distinct angles with audience fit, viral potential, save rate, and hook style scored. Flag if the idea is weak or a duplicate of existing content. |
+| **Developed / specific** | Shorter pass: 2–3 angles briefly presented, your recommendation, and a clear flag if you see a stronger angle Fred hasn't considered. Don't belabor it if the idea is solid. |
+| **Fully formed with clear angle** | Acknowledge the angle, briefly confirm it's the strongest choice or note if another angle would outperform it. One paragraph max. Then proceed. |
+
+The goal is not to slow Fred down — it's to make sure no content enters production locked into an angle that was never questioned. Fred decides which angle(s) to run.
+
+#### GATE 2 — Research Assessment (before brief, after angle selection)
+
+After angle is chosen, assess whether external research is needed:
+
+- **Check `content/research/`** — is there already archived research for this topic?
+- **If YES and it's current** → proceed to brief with that research as source context.
+- **If NO or thin** → print a research prompt Fred can run outside VS Code (ChatGPT, Claude, or Gemini deep research). Wait for Fred to return with results before writing the brief.
+
+**Research prompt format to print:**
+```
+RESEARCH PROMPT — [Topic]
+Run this in ChatGPT / Claude / Gemini (deep research mode):
+
+"[Clear, specific research question grounded in the chosen angle.
+ Ask for: key concepts, real examples, common misconceptions,
+ data points, and what most tutorials/posts get wrong about this topic.]"
+
+Save the output and share it back so I can ground the brief in real material.
+```
+
+Do NOT skip the research gate by saying "I already know enough about this topic." The gate exists to surface what Fred doesn't know yet, not to confirm what's already obvious.
+
+#### GATE 3 — Brief + Production (after angle + research are confirmed)
+
+1. Run the **Ideas Translator** (@ideas-translator) to produce a structured brief — grounded in chosen angle + research
+2. Based on the brief's recommended `content_type`, invoke the right production agents:
    - **Carousel**: Carousel Writer → Caption Writer + Image Prompter (parallel)
    - **Podcast**: Podcast Scripter → Caption Writer + Image Prompter (parallel)
    - **Reel**: Caption Writer (short variant)
    - **Lead Magnet Post**: Lead Magnet Creator → Carousel Writer → Caption Writer
-4. Log the decision via Decision Logger
+3. Log the decision via Decision Logger
 
 ### Mode 2: BUILD → System/Agent
 Fred wants to build something — a new agent, a workflow improvement, a repo structure change, tooling.

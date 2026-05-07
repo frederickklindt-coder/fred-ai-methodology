@@ -8,46 +8,73 @@ From raw idea to published post — every stage, every agent, every file.
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                        STAGE 1: IDEATION                                    ║
-║                        ⏱ ~5 min (Fred) + ~3 min (AI)                       ║
+║                        STAGE 0: ANGLE FILTER (mandatory)                    ║
+║                        ⏱ ~3-8 min depending on idea maturity                ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
 ║                                                                              ║
-║   Fred dumps raw idea                                                        ║
-║   (Google Keep, voice note, chat, brain dump)                                ║
+║   Fred brings a content idea — any form, any state of development            ║
 ║           │                                                                  ║
 ║           ▼                                                                  ║
-║   ┌─────────────────────────────────┐                                        ║
-║   │         @pauli                  │  "I have this idea about..."           ║
-║   │   Classifies as: IDEA → Content │                                        ║
-║   └──────────────┬──────────────────┘                                        ║
-║                  │                                                            ║
-║                  ▼                                                            ║
-║   ┌─────────────────────────────────┐                                        ║
-║   │      @content-angles            │  Debates the idea                      ║
-║   │                                 │  Suggests 6 category angles            ║
-║   │  OUTPUT:                        │  Picks strongest angle                 ║
-║   │  • Recommended angle            │  Drafts 3 hook variations              ║
-║   │  • 3 hook options               │  Flags if weak or duplicate            ║
-║   │  • Golden Rule variation        │                                        ║
-║   └──────────────┬──────────────────┘                                        ║
-║                  │                                                            ║
+║   ┌─────────────────────────────────────────────────────────────┐            ║
+║   │              PAULI — Angle Filter                           │            ║
+║   │                                                             │            ║
+║   │  Reads the idea and scales depth to maturity:              │            ║
+║   │                                                             │            ║
+║   │  RAW idea      → 4–6 full angles, scored table,            │            ║
+║   │                  hook options, audience fit, viral/save     │            ║
+║   │                                                             │            ║
+║   │  DEVELOPED idea → 2–3 angles briefly, recommendation,      │            ║
+║   │                   flag if stronger angle exists             │            ║
+║   │                                                             │            ║
+║   │  FORMED idea   → 1-paragraph confirm or flag. Done.        │            ║
+║   │                                                             │            ║
+║   │  Always checks: is this a duplicate of existing content?   │            ║
+║   └──────────────────────────┬──────────────────────────────────┘            ║
+║                              │                                               ║
 ║        ◆ FRED DECIDES ◆                                                      ║
-║        Pick angle + hook                                                     ║
-║                  │                                                            ║
-╚══════════════════╪═══════════════════════════════════════════════════════════╝
-                   │
-╔══════════════════╪═══════════════════════════════════════════════════════════╗
-║                  │         STAGE 2: STRUCTURING                              ║
-║                  │         ⏱ ~3 min (AI)                                     ║
-╠══════════════════╪═══════════════════════════════════════════════════════════╣
-║                  ▼                                                            ║
+║        Pick angle(s) to run                                                  ║
+║                              │                                               ║
+╚══════════════════════════════╪═══════════════════════════════════════════════╝
+                               │
+╔══════════════════════════════╪═══════════════════════════════════════════════╗
+║                              │   STAGE 0b: RESEARCH GATE                    ║
+║                              │   ⏱ async — Fred runs outside VS Code        ║
+╠══════════════════════════════╪═══════════════════════════════════════════════╣
+║                              ▼                                               ║
+║   ┌─────────────────────────────────────────────────────────────┐            ║
+║   │              PAULI — Research Check                         │            ║
+║   │                                                             │            ║
+║   │  Check content/research/ for this topic                    │            ║
+║   │                                                             │            ║
+║   │  FOUND + current  → proceed with it as source context      │            ║
+║   │                                                             │            ║
+║   │  MISSING or thin  → print research prompt:                 │            ║
+║   │    "Run this in ChatGPT/Claude/Gemini deep research:        │            ║
+║   │     [specific question grounded in chosen angle]            │            ║
+║   │     Ask for: key concepts, examples, misconceptions,        │            ║
+║   │     data points, what tutorials get wrong."                 │            ║
+║   │                                                             │            ║
+║   │  Fred runs research → saves output to                       │            ║
+║   │  content/research/{topic_slug}/                             │            ║
+║   │  Then returns to continue pipeline                          │            ║
+║   └──────────────────────────┬──────────────────────────────────┘            ║
+║                              │                                               ║
+║        ◆ RESEARCH CONFIRMED ◆                                                ║
+║                              │                                               ║
+╚══════════════════════════════╪═══════════════════════════════════════════════╝
+                               │
+╔══════════════════════════════╪═══════════════════════════════════════════════╗
+║                              │        STAGE 1: STRUCTURING                  ║
+║                              │        ⏱ ~3 min (AI)                         ║
+╠══════════════════════════════╪═══════════════════════════════════════════════╣
+║                              ▼                                               ║
 ║   ┌─────────────────────────────────┐                                        ║
 ║   │      @ideas-translator          │                                        ║
 ║   │                                 │  Produces structured YAML brief:       ║
 ║   │  INPUT:                         │  • content_type: carousel              ║
-║   │  • Raw idea + chosen angle      │  • audience segment                    ║
+║   │  • Chosen angle                 │  • audience segment                    ║
 ║   │  • Chosen hook                  │  • key_points (4-5)                    ║
-║   │  • Fred's notes                 │  • myth_or_contrast                    ║
+║   │  • Research output              │  • myth_or_contrast                    ║
 ║   │                                 │  • proof_element                       ║
 ║   │  OUTPUT:                        │  • cta keyword                         ║
 ║   │  📄 content/briefs/             │  • lead_magnet potential               ║
@@ -60,7 +87,7 @@ From raw idea to published post — every stage, every agent, every file.
 ╚══════════════════╪═══════════════════════════════════════════════════════════╝
                    │
 ╔══════════════════╪═══════════════════════════════════════════════════════════╗
-║                  │         STAGE 3: PRODUCTION                               ║
+║                  │         STAGE 2: PRODUCTION                               ║
 ║                  │         ⏱ ~10 min (AI) — Pauli runs 3 agents              ║
 ╠══════════════════╪═══════════════════════════════════════════════════════════╣
 ║                  ▼                                                            ║
@@ -114,7 +141,7 @@ From raw idea to published post — every stage, every agent, every file.
 ╚══════════╪════════════════╪══════════════════════════════════════════════════╝
            │                │
 ╔══════════╪════════════════╪══════════════════════════════════════════════════╗
-║          │                │    STAGE 4: QUALITY CHECK                        ║
+║          │                │    STAGE 3: QUALITY CHECK                        ║
 ║          │                │    ⏱ ~5 min (AI + Fred)                          ║
 ╠══════════╪════════════════╪══════════════════════════════════════════════════╣
 ║          ▼                │                                                  ║
@@ -148,7 +175,7 @@ From raw idea to published post — every stage, every agent, every file.
 ╚══════════╪════════════════╪══════════════════════════════════════════════════╝
            │                │
 ╔══════════╪════════════════╪══════════════════════════════════════════════════╗
-║          │                │    STAGE 5: VISUAL GENERATION                    ║
+║          │               │    STAGE 4: VISUAL GENERATION                    ║
 ║          │                │    ⏱ ~15 min (MANUAL)                            ║
 ╠══════════╪════════════════╪══════════════════════════════════════════════════╣
 ║          │                ▼                                                  ║
@@ -186,7 +213,7 @@ From raw idea to published post — every stage, every agent, every file.
 ╚══════════╪═══════════════╪═══════════════════════════════════════════════════╝
            │               │
 ╔══════════╪═══════════════╪═══════════════════════════════════════════════════╗
-║          │               │    STAGE 6: PUBLISH                               ║
+║          │               │    STAGE 5: PUBLISH                               ║
 ║          │               │    ⏱ ~5 min (MANUAL)                              ║
 ╠══════════╪═══════════════╪═══════════════════════════════════════════════════╣
 ║          │               │                                                   ║
